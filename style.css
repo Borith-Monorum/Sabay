@@ -1,5 +1,18 @@
 :root{
-
+    --color-dark: #333;
+    --color-light: #fff;
+    --color-light-2: rgba(255, 255, 255, 0.8);
+    --bg-header: #161616;
+    --bg-nav: #fa1939;
+    --bg-nav-active: #D90C16;
+    --txt-nav-shadow: 1px 1px 1px rgb(0 0 0 / 40%);
+    --color-danger: #F2272F;
+    --color-primary: #4390F8;
+    --color-success: #38C378;
+    --color-warning: #F9A62B;
+    --color-secondary: #555555;
+    --logo-size: 80px;
+    --default-font-family: 'Koulen', Arial, Helvetica, sans-serif;
 }
 *{
     margin:0;
@@ -7,15 +20,83 @@
     box-sizing:border-box;
     font-family:'Koulen',Arial, Helvetica, sans-serif;
 }
-.header{
+#top{
+    background-color: #161616;
+    width: 100%;
+    
 
 }
-nav{
-    background-color:red;
+.container{
+    width: 60%;
+    margin: 0 auto;
+}
+.top-bar{
+    backgr
     width: 100%;
-    height: 50px;
+    padding: 10px 0 0 0;
+    height: 120px;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.container .logo img {
+    width: 80px;
+}
+.container .ads img{
+  width: 100%;
+}
+nav{
+    background-color:#fa1939;
+    width: 100%;
 }
 nav .navigation{
+    margin:0 auto;
+    height: 50px;
     display: flex;
-    justify-content:center;
+
+    align-items:center;
 } 
+nav .navigation ul{
+
+}
+nav .navigation ul li{
+    list-style-type:none;
+    padding: 10px 15px;
+}
+nav .navigation ul li a{
+    text-decoration:none;
+    color:rgba(255, 255, 255, 0.8);
+}
+nav .navigation ul li a:hover ,li:hover{
+    color: white;
+    background-color:#D90C16;
+}
+nav .navigation ul .active{
+    background-color:#D90C16;
+}
+.container .content{
+    display:flex;
+    gap:10px;
+    margin:15px 0;
+}
+.container .content .content__left{
+    position: relative;
+    width: 100%;
+    display:grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows:repeat(2, 254px);
+}
+.container .content .content__left div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container .content .content__right{
+    row-gap: 4px;
+    display: grid;
+    grid-template-rows: repeat(2, 254px);
+    grid-template-columns: 100%;
+}
+.container .content .content__right div{
+   
+}
