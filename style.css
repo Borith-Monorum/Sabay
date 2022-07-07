@@ -1,0 +1,21 @@
+:root{
+
+}
+*{
+    margin:0;
+    padding:0; 
+    box-sizing:border-box;
+    font-family:'Koulen',Arial, Helvetica, sans-serif;
+}
+.header{
+
+}
+nav{
+    background-color:red;
+    width: 100%;
+    height: 50px;
+}
+nav .navigation{
+    display: flex;
+    justify-content:center;
+} 
