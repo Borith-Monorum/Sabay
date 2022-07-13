@@ -141,15 +141,36 @@ background-color:orange;
 .container .content .content__left a:nth-child(4) .flag::after{
     border-color: transparent transparent transparent orange;
 }
-.container .content .content__left a .paragraph{
+.container .content .content__left a  .time{
+    position:absolute;
+    top: 80%;
+    bottom: 0%;
+    padding: 0 0 0 10px;
+    color: white;
+}
+.container .content .content__left a .text__content{
     position:absolute;
     /* top: 20%; */
     bottom: 10%;
     padding: 10px;
     color: white;
+    transition: all .5s ;
 }
-.container .content .content__left a:hover .paragraph{
+.container .content .content__left a:hover .text__content {
+    bottom: 20%;
+}
+.container .content .content__left a:hover .text__content .title{
     color: red;
+}
+.container .content .content__left a .text__content .description{
+    visibility:hidden;
+    opacity: 0;
+    transition: all .3s linear;
+    font-size: 14px;
+}
+.container .content .content__left a:hover .text__content .description{
+    opacity: 1;
+    visibility: visible;
 }
 .container .content .content__left a img{
     width: 100%;
