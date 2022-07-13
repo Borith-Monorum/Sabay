@@ -13,6 +13,7 @@
     --color-secondary: #555555;
     --logo-size: 80px;
     --default-font-family: 'Koulen', Arial, Helvetica, sans-serif;
+    --linear-gradient-overay:linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.8) 60%, black 100%);
 }
 *{
     margin:0;
@@ -81,20 +82,84 @@ nav .navigation ul .active{
 }
 .container .content .content__left{
     position: relative;
-    width: 100%;
+    width: 70%;
     display:grid;
     grid-template-columns: 60% 40%;
     grid-template-rows:repeat(2, 254px);
 }
-.container .content .content__left div img{
+.container .content .content__left a{
+    position: relative;
+}
+.container .content .content__left a .overlay{
+position: absolute;
+width: 100%;
+height: 100%;
+opacity: 0.4;
+background: var(--linear-gradient-overay);
+}
+.container .content .content__left a .overlay:hover{
+    opacity: 0.8;
+    background: var(--linear-gradient-overay);
+}
+.container .content .content__left a .flag::after{
+    content:" ";
+    position:absolute;
+    top: 0;
+    left: 100% ;
+    border-width: 36px 0 0 10px;
+    border-style: solid;
+
+}
+.container .content .content__left a .flag{
+z-index:1​;
+position: absolute;
+color: white;
+padding: 3px 10px;
+margin:8px 0;
+}
+.container .content .content__left a:nth-child(1) .flag{
+background-color:blue;
+}
+.container .content .content__left a:nth-child(2) .flag{
+background-color:red;
+}
+.container .content .content__left a:nth-child(3) .flag{
+background-color: green;
+}
+.container .content .content__left a:nth-child(4) .flag{
+background-color:orange;
+}
+.container .content .content__left a:nth-child(1) .flag::after{
+    border-color: transparent transparent transparent blue;
+}
+.container .content .content__left a:nth-child(2) .flag::after{
+    border-color: transparent transparent transparent red;
+}
+.container .content .content__left a:nth-child(3) .flag::after{
+    border-color: transparent transparent transparent green;
+}
+.container .content .content__left a:nth-child(4) .flag::after{
+    border-color: transparent transparent transparent orange;
+}
+.container .content .content__left a .paragraph{
+    position:absolute;
+    /* top: 20%; */
+    bottom: 10%;
+    padding: 10px;
+    color: white;
+}
+.container .content .content__left a:hover .paragraph{
+    color: red;
+}
+.container .content .content__left a img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 .container .content .content__right{
-    row-gap: 4px;
+    grid-row-gap: 8px;
     display: grid;
-    grid-template-rows: repeat(2, 254px);
+    grid-template-rows: repeat(2, 250px);
     grid-template-columns: 100%;
 }
 .container .content .content__right div{
