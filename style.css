@@ -28,8 +28,9 @@
 
 }
 .container{
-    width: 60%;
+    width: 75%;
     margin: 0 auto;
+    box-shadow:1px 1px 3px 1px #ddd;
 }
 .top-bar{
 
@@ -82,7 +83,7 @@ nav .navigation ul .active{
 }
 .container .content .content__left{
     position: relative;
-    width: 70%;
+    width: 100%;
     display:grid;
     grid-template-columns: 60% 40%;
     grid-template-rows:repeat(2, 254px);
@@ -111,7 +112,7 @@ background: var(--linear-gradient-overay);
 
 }
 .container .content .content__left a .flag{
-z-index:1​;
+z-index:1;
 position: absolute;
 color: white;
 padding: 3px 10px;
@@ -178,20 +179,24 @@ background-color:orange;
     object-fit: cover;
 }
 .container .content .content__right{
+
     grid-row-gap: 8px;
     display: grid;
     grid-template-rows: repeat(2, 250px);
     grid-template-columns: 100%;
 }
+.container .content .content__right div{
+
+}
 .container .content1 .small__content{
     padding: 15px 30px;
-
+    height: 90vh;
     border-top: 3px solid red;
     box-shadow:1px 1px 3px 1px #ddd;
 }
 .container .content1 .top__small__content{  
  
-    
+ 
     display: grid;
     grid-template-columns:repeat(3,33.25%);
 }
@@ -238,15 +243,20 @@ background-color:orange;
     border-color: transparent transparent transparent red;
 }
 .container .content1 .small__content .bottom__small__content{
-    width: 70%;
+    width: 65%;
     display: grid;
-    grid-template-columns: repeat(4,25%);
-    gap: 10px;
+    grid-template-columns: 25% 25% 25% 25% ;
+    grid-template-rows: repeat(4,100px);
+    margin-top:30px;
+    column-gap:15px;
+    float: left;
 }
-.container .content1 .small__content .bottom__small__content a{
+.container .content1 .small__content .bottom__small__content a
+{
     width: 100%;   
     text-decoration:none;
     color: #111;
+    font-size: 13px;
 }
 .container .content1 .small__content .bottom__small__content p{
     font-family: 'Kh Battambang';
@@ -258,5 +268,14 @@ background-color:orange;
     
 }
 .container .content1 .small__content .bottom__small__content__right{
-    font-family: 'kh battambang';
+    width:29.5%;
+    margin-top:30px;
+ display: grid;
+ grid-template-columns: 100%;
+ grid-template-rows: repeat(3,65px);
+ float: right;
+
+}
+.container .content1 .small__content .bottom__small__content__right a img{
+ width: 95%;
 }
