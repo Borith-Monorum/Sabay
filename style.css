@@ -237,3 +237,26 @@ background-color:orange;
     border-width: 40px 0 0 15px;
     border-color: transparent transparent transparent red;
 }
+.container .content1 .small__content .bottom__small__content{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    gap: 10px;
+}
+.container .content1 .small__content .bottom__small__content a{
+    width: 100%;   
+    text-decoration:none;
+    color: #111;
+}
+.container .content1 .small__content .bottom__small__content p{
+    font-family: 'Kh Battambang';
+
+}
+.container .content1 .small__content .bottom__small__content a img{
+    object-fit: cover;
+    width: 100%;
+    
+}
+.container .content1 .small__content .bottom__small__content__right{
+    font-family: 'kh battambang';
+}
