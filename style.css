@@ -15,6 +15,12 @@
     --default-font-family: 'Koulen', Arial, Helvetica, sans-serif;
     --linear-gradient-overay:linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.8) 60%, black 100%);
 }
+.title{
+    font-size:18px;
+}
+p{
+    font-family: 'Kh Battambang';
+}
 *{
     margin:0;
     padding:0; 
@@ -30,7 +36,6 @@
 .container{
     width: 75%;
     margin: 0 auto;
-    box-shadow:1px 1px 3px 1px #ddd;
 }
 .top-bar{
 
@@ -50,6 +55,10 @@
 nav{
     background-color:#fa1939;
     width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+
 }
 nav .navigation{
     margin:0 auto;
@@ -188,9 +197,32 @@ background-color:orange;
 .container .content .content__right div{
 
 }
+
+
+/* ________________________________video_content  _____________________________*/
+.container .content1{
+    margin-top:20px;
+}
+.container .content1 .flag1{
+    padding: 5px 10px;
+    width: 60px;
+    background-color: red;
+    position: relative;
+}
+.container .content1 .flag1::after{
+    
+    top: 0;
+    left: 100%;
+    position: absolute;
+    border-style: solid;
+    content: "";
+    border-width: 40px 0 0 15px;
+    border-color: transparent transparent transparent red;
+}
+/* ================ small__content=============== */
 .container .content1 .small__content{
     padding: 15px 30px;
-    height: 90vh;
+    height: 100%;
     border-top: 3px solid red;
     box-shadow:1px 1px 3px 1px #ddd;
 }
@@ -226,56 +258,317 @@ background-color:orange;
     text-decoration:none;
     color:#000;
 }
-.container .content1 .flag1{
-    padding: 5px 10px;
-    width: 60px;
-    background-color: red;
+.container .content1 .top__small__content a div{
+    width: 100%;
+    height: 200px;
+    background-color:black;
+}
+/* __________________________bottom__small__content__left________________ */
+.container .content1 .small__content .bottom__small__content__left{
+    width: 65%;
+    display: grid;
+    grid-template-columns: repeat(4, 24%) ;
+    grid-column-gap: 2%;
+    grid-row-gap:4%;
+   
+   
+
+}
+.container .content1 .small__content .bottom__small__content__left a
+{
+    text-decoration:none;
+    color: #111;
+    font-size: 13px;
+}
+.container .content1 .small__content .bottom__small__content__left a div{
+width: 100%;
+
+}
+.container .content1 .small__content .bottom__small__content__left p{
+    font-family: 'Kh Battambang';
+
+}
+.container .content1 .small__content .bottom__small__content__left a div{
+    width: 100%;
+    height: 93px;
+    
+    
+    background: black;
+}
+.container .content1 .small__content .bottom__small__content__left a img{
+    object-fit: cover;
+    object-position:center;
+
+    width: 100%;
+    height: 93px;
+    transition: all .1s linear;
+}
+.container .content1 .small__content .bottom__small__content__left a img:hover{
+    transform: scale(0.98);
+}
+/* end__________________________bottom__small__content__left________________ */
+
+/* __________________________bottom__small__content__right________________ */
+.container .content1 .small__content .bottom__small__content__right{
+ width: 30%;
+    margin:0 auto;
+}
+.container .content1 .small__content .bottom__small__content__right a img{
+ width: 100%;
+ transition: all .3s linear;
+}
+.container .content1 .small__content .bottom__small__content__right a img:hover{
+ transform: scale(0.98);
+}
+.container .content1 .small__content .wrap__btn__content{
+    display: flex;
+    margin-top: 10px;
+}
+/* end__________________________bottom__small__content__right________________ */
+
+
+/* end ================ small__content=============== */
+/* _____________________________end video__content____________________________ */
+
+
+
+/* ________________________________entertainment content___________________________  */
+    /* -------------------------Small__content---------------- */
+.container .entertainment .small__content{
+display: flex;
+width: 100%;
+
+}
+
+        /* ----------small__left__content---------- */
+.container .entertainment .small__content  .small__left__content{
+width: 30%;
+padding-right:5px;
+}
+
+.container .entertainment .small__content  .small__left__content a div{
+width: 100%;
+background-color: #161616;
+}
+
+.container .entertainment .small__content  .small__left__content a{
+    text-decoration:none;
+    color:white;
+    
+
+}
+.container .entertainment .small__content  .small__left__content a:hover img{
+    transition: all .1s linear;x
+    transform:scale(0.97);
+}
+.container .entertainment .small__content  .small__left__content a div p{
+    padding: 15px  20px;
+    background-color: #FA5480;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.container .entertainment .small__content .small__left__content a img{
+width: 100%;
+margin-top:10px;
+object-fit: cover;
+object-position:top;
+}
+
+        /* END -------small__left__content---------- */
+
+
+        /* ---------small__right__content-------------- */
+.container .entertainment .flag1{
+    padding: 5px 0px 5px 10px;
+    width: 75px;
+    background-color: #FA5480;
     position: relative;
 }
-.container .content1 .flag1::after{
-    
+.container .entertainment .flag1::after{
     top: 0;
     left: 100%;
     position: absolute;
     border-style: solid;
     content: "";
     border-width: 40px 0 0 15px;
-    border-color: transparent transparent transparent red;
+    border-color: transparent transparent transparent #FA5480;
 }
-.container .content1 .small__content .bottom__small__content{
-    width: 65%;
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25% ;
-    grid-template-rows: repeat(4,100px);
-    margin-top:30px;
-    column-gap:15px;
-    float: left;
+.container .entertainment .flag2{
+    padding: 5px 0px 5px 10px;
+    width: 100px;
+    background-color: #4390F8;
+    position: relative;
 }
-.container .content1 .small__content .bottom__small__content a
-{
-    width: 100%;   
+.container .entertainment .flag2::after{
+    top: 0;
+    left: 100%;
+    position: absolute;
+    border-style: solid;
+    content: "";
+    border-width: 41px 0 0 15px;
+    border-color: transparent transparent transparent #4390F8;
+}
+.container .entertainment .flag3{
+    padding: 5px 0px 5px 10px;
+    width: 110px;
+    background-color: #38C378;
+    position: relative;
+}
+.container .entertainment .flag3::after{
+    top: 0;
+    left: 100%;
+    position: absolute;
+    border-style: solid;
+    content: "";
+    border-width: 41px 0 0 15px;
+    border-color: transparent transparent transparent #38C378;
+}
+.container .entertainment .flag4{
+    padding: 5px 0px 5px 10px;
+    width: 60px;
+    background-color: #F9A62B;
+    position: relative;
+}
+.container .entertainment .flag4::after{
+    top: 0;
+    left: 100%;
+    position: absolute;
+    border-style: solid;
+    content: "";
+    border-width: 41px 0 0 15px;
+    border-color: transparent transparent transparent #F9A62B;
+}
+.container .entertainment .small__content{
+    border-top: 3px solid #FA5480;
+}
+.container .entertainment .small__content  .small__right__content{
+width: 70%;
+display: grid;
+grid-template-columns: repeat(4,25%);
+column-gap: 5px;
+row-gap:15px;
+
+}
+.container .entertainment .small__content  .small__right__content a{
     text-decoration:none;
-    color: #111;
+    color:#333;
     font-size: 13px;
+    overflow: hidden;
 }
-.container .content1 .small__content .bottom__small__content p{
-    font-family: 'Kh Battambang';
+.container .entertainment .small__content  .small__right__content a:hover img{
+    transform:scale(0.97);
+    transition: all .1s linear;
+}
+.container .entertainment .small__content  .small__right__content a div{
+background-color: #161616;
+height:100px;
+}
+.container .entertainment .small__content  .small__right__content a div p{
+    height: 100%;
+    padding:0 6px 0 6px;
+    line-height: 1.6;
+}
 
+.container .entertainment .small__content  .small__right__content a img{
+width: 100%;
+height: 100px;
+object-fit:cover;
+object-position:top;
 }
-.container .content1 .small__content .bottom__small__content a img{
-    object-fit: cover;
-    width: 100%;
-    
-}
-.container .content1 .small__content .bottom__small__content__right{
-    width:29.5%;
-    margin-top:30px;
- display: grid;
- grid-template-columns: 100%;
- grid-template-rows: repeat(3,65px);
- float: right;
 
+            /* END----------small__right__content------------- */
+
+
+    	/* END --------------Small__content--------------------- */
+
+/* ____________________________________end entertainment content_______________________  */
+
+
+footer{
+    background-color:#000;
+    padding: 20px 0;
+    color:#ABAAAB;
 }
-.container .content1 .small__content .bottom__small__content__right a img{
- width: 95%;
+footer .row{
+    display: flex;
+    justify-content:space-between;  
 }
+ /* _______________________footer__left____________________ */
+.footer__left{
+width: 40%;
+}
+.footer__left a{
+    color:#ABAAAB ;
+}
+.footer__left a:hover{
+color: white;
+}
+.footer__left img{
+width: 150px;
+}
+.footer__left p{
+    font-size: 14px;
+}
+
+ /* end _______________________footer__left____________________ */
+
+
+ /* _______________________footer__center____________________ */
+ .footer__center{
+    padding:0 0 0 10px;
+}
+.footer__center .title{
+    margin:0 0 20px 0;
+}
+.footer__center p{
+padding: -50px 0 0 0;
+font-size: 14px;
+}
+.footer__center p a{
+    color: #ABAAAB;
+}
+.footer__center p a:hover{
+    color: white;
+}
+ .footer__center .sponsor{
+    padding: 20px 0 0 0;
+    display:flex;
+}
+.footer__center  .sponsor a img{
+width: 40px;
+padding: 0 3px;
+}
+ /* end _______________________footer__center____________________ */
+
+
+ /* _______________________footer__right____________________ */
+ .footer__right{
+    padding:0 0 0 10px;
+ }
+ .footer__right .title{
+    padding: 0 0 20px 0;
+    width: 200px;
+ }
+ .footer__right a{
+    text-decoration: none;
+    color:#abaaab;
+ }
+ .footer__right p{
+    line-height: 1.6;
+    padding: 20px 0;
+ }
+ .footer__right a:hover{
+    color: white;
+ } 
+ .footer__right .list__social{
+        display: flex;
+    }
+    .footer__right .list__social i{
+        padding:0 3px;
+        font-size: 20px;
+    }
+    .footer__right .list__social i:hover{
+        color: white;
+    }
+ /* end _______________________footer__right____________________ */
