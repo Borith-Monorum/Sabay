@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration:none;
+    color: black;
+}
+.container .content{
+   
+
+    width: 100%;
+}
+.container .entertainment__page{
+    margin-top:60px;
+    display: flex;
+}
+
+/* ___________________________________content_left______________________ */
+.container .content__left{
+    border-top:#FA5480 solid;
+    box-shadow: 1px 1px 3px 1px #999;
+/* background-color: blueviolet; */
+    position: relative;
+    width: 100%;
+    padding: 25px 25px;
+}
+.container .content__left .flag{
+    position: absolute;
+    top:-40px;
+    background-color: #FA5480;
+    padding: 5px 15px;
+
+}
+.container .entertainment__page .content__left .flag::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    border-width: 40px  0 0 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent #FA5480 ;
+}
+.container .entertainment__page .content__left .list_switch{
+    position:absolute;
+    top:-35px;
+    left: 90%;
+}
+.container .entertainment__page .content__left .list_switch i{
+    padding:0 0 0 15px;
+    color:#888888;
+}
+.container .entertainment__page .content__left .list_switch i:hover{
+    color:black;
+}
+.container .entertainment__page .content__left .list_switch .active{
+    color:black;
+}
+/* ________small__content_________ */
+.container .entertainment__page .content__left .small__content{
+    
+}
+.container .entertainment__page .content__left .small__content .top__small__content{
+    width: 100%;
+    height: 200px;
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: repeat(2,400px);
+    margin: 0 auto;
+    
+}
+.container .entertainment__page .content__left .small__content .top__small__content a:hover img{
+transform: scale(0.98)
+}
+.container .entertainment__page .content__left .small__content .top__small__content a p {
+padding: 0 10px 0 3px;
+font-size:16px;
+}
+.container .entertainment__page .content__left .small__content .top__small__content a div{
+    background-color: black;
+    height: 250px;
+
+}
+.container .entertainment__page .content__left .small__content .top__small__content a div img{
+    width: 367;
+    height: 250px;
+    object-fit: cover;
+    object-position:  0px -25px;
+    transition: all .1s linear;
+}
+/* end________small__content_________ */
+
+/*  End_____________________________content_left______________________ */
+
+
+
+/* ___________________________________content_right______________________ */
+.container .entertainment__page .content__right{
+    /* background-color: #ddd; */
+    margin-left:15px;
+   width: 30%;
+}
+.container .entertainment__page .content__right div img{
+    width: 100%;
+}
+/*  End_____________________________content_right______________________ */
